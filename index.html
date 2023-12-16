@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMMDB Project</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 56px; /* Adjusted to account for the fixed navbar */
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #ccc; /* Line between sections */
+            margin: 0 !important;
+        }
+
+        section:nth-child(odd) {
+            background-color: #f8f9fa; /* Light background for odd sections */
+        }
+
+        section:nth-child(even) {
+            background-color: #dee2e6; /* Dark background for even sections */
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="path/to/your/svg-image.svg" alt="AIMMDB Logo" height="30" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#how-to-access">How to Access</a></li>
+                <li class="nav-item"><a class="nav-link" href="#data-sets">Data Sets</a></li>
+                <li class="nav-item"><a class="nav-link" href="#funding">Funding</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="home">
+        <header>
+            <h1 class="display-4">AIMMDB Project</h1>
+            <p class="lead">Welcome to the AIMMDB project! This repository contains...</p>
+        </header>
+    </div>
+
+    <div class="container-fluid" id="about">
+        <section>
+            <h2 class="text-center">About</h2>
+            <p>Insert information about your project here...</p>
+        </section>
+    </div>
+
+    <div class="container-fluid" id="how-to-access">
+        <section>
+            <h2 class="text-center">How to Access</h2>
+            <p>Include instructions on how to access the project...</p>
+        </section>
+    </div>
+
+    <div class="container-fluid" id="data-sets">
+        <section>
+            <h2 class="text-center">Data Sets</h2>
+            <p>Provide details about the available data sets...</p>
+        </section>
+    </div>
+
+    <div class="container-fluid" id="funding">
+        <section>
+            <h2 class="text-center">Funding</h2>
+            <p>Information about funding sources and support...</p>
+        </section>
+    </div>
+
+    <footer class="container-fluid bg-dark text-white text-center py-3">
+        &copy; 2023 AIMMDB Project
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("section:even").css("background-color", "#dee2e6");
+            $("section:odd").css("background-color", "#f8f9fa");
+        });
+    </script>
+</body>
+</html>
